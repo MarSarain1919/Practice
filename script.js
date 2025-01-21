@@ -6,7 +6,20 @@ function addTask() {
     if (task) {
         const listItem = document.createElement('li');
         listItem.textContent = task;
+
+        // Create a delete button (X)
+        const deleteButton = document.createElement('span');
+        deleteButton.textContent = 'X';
+        deleteButton.classList.add('delete-button');
+
+        // Add event listener to delete button on click
+        deleteButton.addEventListener('click', function () {
+            taskList.removeChild(listItem);
+        });
+
+        listItem.appendChild(deleteButton);
         taskList.appendChild(listItem);
+
         taskInput.value = ''; // Clear the input field
     }
     else {
@@ -21,3 +34,4 @@ document.getElementById('taskInput').addEventListener('keydown', function(event)
         addTask();
     }
 });
+}
