@@ -13,3 +13,9 @@ function addTask() {
         alert("Please enter a task.");
     }
 }
+
+document.getElementById('taskInput').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') { // Check if Enter key is pressed
+        addTask();
+    }
+});
