@@ -47,4 +47,21 @@ li {
     margin: 5px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between; /* Align text left, delete button right */
+    align-items: center;
+    position: relative;
+}
+
+/* Hide delete button by default */
+.delete-button {
+    display: none;
+    color: red;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+li:hover .delete-button {
+    display: inline;
 }
