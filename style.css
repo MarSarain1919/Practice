@@ -11,7 +11,7 @@ header {
 }
 
 .task-container {
-    align-self: center;
+    -ms-flex-align: center;
     max-width: 400px;
     margin: 0 auto;
 }
