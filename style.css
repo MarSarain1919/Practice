@@ -5,10 +5,13 @@ body {
 
 header {
     text-align: center;
+    font-size: larger;
+    font-family: fantasy;
     margin-bottom: 20px;
 }
 
 .task-container {
+    align-self: center;
     max-width: 400px;
     margin: 0 auto;
 }
@@ -29,7 +32,8 @@ ul {
 }
 
 li {
-    background: #f9f9f9f9;
+    background: #000000f9;
+    text-decoration-color: #ddd;
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ddd;
