@@ -44,18 +44,18 @@ function addTask() {
         const listItem = document.createElement('li');
         listItem.textContent = task;
 
-        // // Create the delete button (X)
-        // const deleteButton = document.createElement('span');
-        // deleteButton.textContent = '✖'; // X symbol
-        // deleteButton.classList.add('delete-btn');
+        // Create the delete button (X)
+        const deleteButton = document.createElement('span');
+        deleteButton.textContent = '✖'; // X symbol
+        deleteButton.classList.add('delete-btn');
 
-        // // Add event listener to delete task on click
-        // deleteButton.addEventListener('click', function () {
-        //     taskList.removeChild(listItem);
-        // });
+        // Add event listener to delete task on click
+        deleteButton.addEventListener('click', function () {
+            taskList.removeChild(listItem);
+        });
 
-        // // Append the delete button to the list item
-        // listItem.appendChild(deleteButton);
+        // Append the delete button to the list item
+        listItem.appendChild(deleteButton);
         taskList.appendChild(listItem);
 
         // Clear input field

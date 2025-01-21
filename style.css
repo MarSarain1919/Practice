@@ -54,7 +54,7 @@ li {
 }
 
 /* Hide delete button by default */
-.delete-button {
+.delete-btn {
     display: none;
     color: red;
     font-weight: bold;
@@ -62,6 +62,6 @@ li {
     cursor: pointer;
 }
 
-li:hover .delete-button {
+li:hover .delete-btn {
     display: inline;
 }
